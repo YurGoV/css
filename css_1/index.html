@@ -1,0 +1,46 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!doctype html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+  <!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+  <head>
+    <!-- Заголовок страницы в браузере -->
+    <title>CSS. Часть №1 (Синтаксис + Обнуление)</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Кодировка страницы -->
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+  </head>
+  <!-- Отображаемое тело страницы -->
+  <body>
+    <div>
+      <p>
+        Lorem <span>ipsum dolor sit amet</span>, consectetur adipisicing elit.
+        Quae magni sapiente enim soluta! Numquam natus fuga accusantium,
+        delectus necessitatibus fugit totam iure rerum mollitia aliquam quae!
+        Dolores, harum, quae? Expedita.
+      </p>
+      <p class="bigred">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae at
+        sed quasi earum quo perferendis porro atque saepe vero alias ipsa
+        <span class="bigred">repudiandae facilis praesentium </span>natus
+        accusantium quisquam nemo iusto, deserunt est. Natus dolore quisquam
+        Accusantium rem sit eligendi enim adipisci, mollitia dolores.
+      </p>
+    </div>
+    <div class="block">
+      <!-- style block.p applyed only for 1rst lefel of p inside this div -->
+      <p>
+        accusantium quisquam nemo iusto, deserunt est. Natus dolore quisquam
+        Accusantium rem sit eligendi enim adipisci, mollitia dolores.
+      </p>
+      <div>
+        <!-- style block.p NOT applyed there (because this is the 2nd level according to 'block' style div) -->
+        <p>
+          accusantium quisquam nemo iusto, deserunt est. Natus dolore quisquam
+          Accusantium rem sit eligendi enim adipisci, mollitia dolores.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
